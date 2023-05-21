@@ -1,6 +1,6 @@
 body,
 html {
-  background: url(bg.jpg) no-repeat center center fixed; 
+  background: url(RB-BG.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,18 +10,18 @@ html {
   
 }
 h1 {
-  color: rgba(49, 46, 71);
+  color: rgb(220, 146, 20);
   text-align: center;
-  font-size: 14em;
+  font-size: 18em;
   font-family: Brush Script MT, Brush Script Std, cursive;
-  text-shadow: 2px 2px 5px grey;
+  text-shadow: 4px 4px 5px grey;
 
 }
 
 
 h2{
-  font-size:3rem;
-  color: #e2dbdb;
+  font-size:5rem;
+  color: #0abfcc;
   font-family: Courier New, monospace;
   text-align: center;
   width: 100%;
@@ -52,7 +52,7 @@ hr {
 }
 .btn-primary {
   color: black;
-  background-color: #FFAF6D;
+  background-color: rgb(220, 146, 20);
   border-color: #F05F44;
   --bs-btn-hover-bg: #ee4b08;  
   --bs-btn-hover-border-color: #ee4b08;
@@ -66,4 +66,82 @@ hr {
 .btn-xl {
   padding: 1rem 2rem;
 }
+/* For screens smaller than 576px */
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 8em;
+  }
 
+  h2 {
+    font-size: 3rem;
+    margin-top: 100px;
+  }
+
+  .btn {
+    margin-left: 20px;
+  }
+
+  .btn-xl {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* For screens between 576px and 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 10em;
+  }
+
+  h2 {
+    font-size: 4rem;
+    margin-top: 150px;
+  }
+
+  .btn {
+    margin-left: 30px;
+  }
+
+  .btn-xl {
+    padding: 0.9rem 1.8rem;
+  }
+}
+
+/* For screens between 768px and 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 12em;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+    margin-top: 175px;
+  }
+
+  .btn {
+    margin-left: 40px;
+  }
+
+  .btn-xl {
+    padding: 1rem 2rem;
+  }
+}
+
+/* For screens larger than or equal to 992px */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 18em;
+  }
+
+  h2 {
+    font-size: 5rem;
+    margin-top: 225px;
+  }
+
+  .btn {
+    margin-left: 45px;
+  }
+
+  .btn-xl {
+    padding: 1rem 2rem;
+  }
+}
